@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto Slab", serif;
+      }
+      body {
+        background-color: rgb(71, 71, 202);
+      }
+      .container {
+        margin: 60px auto;
+        border: wheat;
+        background-color: white;
+        width: 60vw;
+        height: 80vh;
+        border-radius: 8px;
+      }
+
+      .heading {
+        margin: 10px 20px;
+        box-sizing: border-box;
+        padding-top: 15px;
+      }
+
+      .personal-info {
+        margin: 10px 20px;
+        margin-top: 23px;
+      }
+      .identity-info {
+        margin: 10px 20px;
+        margin-top: 29px;
+      }
+      h3 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: rgb(99, 97, 97);
+      }
+      ._form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 11px;
+      }
+
+      label {
+        /* padding: 10px 10px;
+            margin: 10px 6px; */
+        padding-bottom: 10px;
+        font-size: 15px;
+      }
+      input[type="text"] {
+        /* width: 100px; */
+        width: 199px;
+        height: 27px;
+        border: 1px solid #d1d1ce;
+        border-radius: 4px;
+      }
+      button {
+        margin: 10px 20px;
+        margin-top: 20px;
+        width: 180px;
+        height: 26px;
+        background-color: rgb(71, 71, 202);
+        border: 1px solid rgb(71, 71, 202);
+        border-radius: 4px;
+        color: white;
+      }
+      @media  (max-width: 1070px) and (min-width:670px){
+        .container{
+            height: auto;
+        }
+        ._form {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 11px;
+      }
+      }
+      @media  (max-width:671px){
+
+        .container{
+            height: auto;
+        }
+        ._form {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 11px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="heading">Registration</h2>
+      <div class="personal-info">
+        <h3>Personal Details</h3>
+        <form action="" class="_form">
+          <div id="_fname">
+            <label for="FName" class="_label">Name</label><br />
+            <input
+              type="text"
+              name=""
+              id="FName"
+              placeholder=" Enter your name"
+            />
+          </div>
+          <div id="_DOB">
+            <label for="dob">Date Of Birth</label><br />
+            <input
+              type="text"
+              name=""
+              id="dob"
+              placeholder=" Enter birth date"
+            />
+          </div>
+          <div id="_email">
+            <label for="email">Email</label><br />
+            <input
+              type="text"
+              name=""
+              id="email"
+              placeholder=" Enter your email"
+            />
+          </div>
+          <div id="_phone">
+            <label for="phone">Mobile Number</label><br />
+            <input
+              type="text"
+              name=""
+              id="phone"
+              placeholder=" Enter mobile Number"
+            />
+          </div>
+          <div id="_gender">
+            <label for="gender">Gender</label><br />
+            <input
+              type="text"
+              name=""
+              id="gender"
+              placeholder=" Enter your gender"
+            />
+          </div>
+          <div id="_occupation">
+            <label for="occupation">Occupation</label><br />
+            <input
+              type="text"
+              name=""
+              id="occupation"
+              placeholder=" Enter occupation"
+            />
+          </div>
+        </form>
+      </div>
+
+      <div class="identity-info">
+        <h3>Identity Details</h3>
+        <form action="" class="_form">
+          <div id="_idType">
+            <label for="idType">ID Type</label><br />
+            <input
+              type="text"
+              name=""
+              id="idType"
+              placeholder=" Enter ID type"
+            />
+          </div>
+          <div id="_idNumber">
+            <label for="idNumber">ID Number</label><br />
+            <input
+              type="text"
+              name=""
+              id="idNumber"
+              placeholder=" Enter ID number"
+            />
+          </div>
+          <div id="_authority">
+            <label for="authority">Issue Authority</label><br />
+            <input
+              type="text"
+              name=""
+              id="authority"
+              placeholder=" Enter issue department"
+            />
+          </div>
+          <div id="_issueDate">
+            <label for="issueDate">Issue Date</label><br />
+            <input
+              type="text"
+              name=""
+              id="issueDate"
+              placeholder=" Enter ID issue date"
+            />
+          </div>
+          <div id="_issueState">
+            <label for="issueState">Issue State</label><br />
+            <input
+              type="text"
+              name=""
+              id="issueState"
+              placeholder=" Enter ID issue state"
+            />
+          </div>
+          <div id="_expiryDate">
+            <label for="expiryDate">Expiry Date</label><br />
+            <input
+              type="text"
+              name=""
+              id="expiryDate"
+              placeholder=" Enter ID expiry date"
+            />
+          </div>
+        </form>
+      </div>
+
+      <button>Next</button>
+    </div>
+  </body>
+</html>
